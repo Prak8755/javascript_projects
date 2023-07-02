@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- is for compatibility specially for internet explorer users- to use recent rendering engine edge in IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this meta tag gives info about device screen ,adjust the width of the browser acc to device, then initiail scale is --innitial zoom level of browser that is 100% -->
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="box-content">
+    <div class="pt-[5%]  ">
+        <div class="w-[500px] m-auto border shadow-md  overflow-hidden flex flex-col items-center bg-gray-200">
+          
+                <input class=" w-[90%] input-filed text-center border  mt-6  shadow-inner h-20 " type="text"  > 
+    
+
+
+            <div class="grid grid-cols-4 mt-4">
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-red-400 rounded-md shadow-md my-4 text-white operator ">C</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-pink-400 rounded-md shadow-md my-4 text-white operator ">/</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-pink-400 rounded-md shadow-md my-4 text-white operator ">*</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500  bg-pink-400 rounded-md shadow-md my-4 text-white operator ">-</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">7</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">8</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">9</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-pink-400 rounded-md shadow-md my-4 text-white operator ">+</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">4</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">5</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">6</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 rounded-md  bg-pink-400 shadow-md my-4 text-white operator row-span-3">=</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">1</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">2</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">3</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black number">0</button>
+                <button class=" font-bold px-10 py-4 bg-gray-400 mx-6 hover:bg-gray-500 bg-white rounded-md shadow-md my-4 text-black operator ">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

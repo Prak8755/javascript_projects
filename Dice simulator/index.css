@@ -1,0 +1,83 @@
+.main{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+ .main h1{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dice{
+    font-size: 190px;
+    animation-duration: .6s;
+    animation-fill-mode:forwards;
+}
+.btn{
+    margin:10px 0px;
+    padding:20px 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color:white;
+    background-color: black;
+    transition: 0.9s;
+}
+.btn:hover{
+    border: 2px solid red;
+}
+
+.show-roll{
+    list-style-type: none;
+    padding: 0px;
+    margin:20 auto;
+    width: 700px;
+    
+}
+li{
+    background-color: aliceblue;
+    margin:20px;
+    padding:20px;
+    font-size:25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px;
+}
+li span{
+    font-size:55px;
+}
+ @media screen and (max-width: 600px) {
+    .main h1{
+        font-size:40px;
+    }
+    .main{
+        text-align: center;
+    }
+    .dice{
+        font-size:100px;
+    }
+    .btn{
+        padding:10px 50px;
+    }
+    .show-roll{
+        width:300px;
+    }
+    li{
+        padding:8px;
+    }
+}
+.roll-animation{
+    animation-name:roll ;
+}
+@keyframes roll{
+    0%{
+        transform:rotateX(0deg) rotateY(0deg)
+    }
+    100%{
+        transform:rotateX(720deg) rotateY(720deg)
+    }
+}
+
+
